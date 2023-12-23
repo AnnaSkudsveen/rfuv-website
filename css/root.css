@@ -1,0 +1,12 @@
+:root {
+    --primary: #;
+    --secondary: ;
+    --tertiary: ;
+    --whiteish: ;
+    --blackish: ;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
