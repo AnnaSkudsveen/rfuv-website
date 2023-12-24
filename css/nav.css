@@ -19,8 +19,6 @@ nav {
 
 .nav-menu-logo {
     height: 2.25rem;
-    /* display: flex;
-    align-items: center; */
 }
 
 .nav-menu-logo-container {
@@ -29,18 +27,13 @@ nav {
     align-items: center;
 }
 
-/* .nav-menu-logo img {
-    height: 100%;
-    width: 100;
-} */
-
 nav label {
     padding: 0 1.25rem;
 }
 
 .nav-menu-items li, nav div a {
     list-style: none;
-    /* padding: 1rem 0 1rem 1.25rem; */
+    padding: 1rem 1rem 1rem 1.25rem;
     margin: 0;
 }
 
@@ -59,12 +52,14 @@ nav li a:hover {
 
 #nav-menu-button:checked ~ .nav-menu-items, .nav-menu-contact {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
     color: var(--primary);
     background-color: var(--blackish);
     position: absolute;
-    width: 100%;
-    height: fit-content;
+    width: 50vw;
+    height: auto;
     top: 3rem;
     margin: 0;
     padding: 0;
@@ -94,6 +89,7 @@ nav a, nav label{
 
     .nav-menu-items {
         display: flex;
+        flex-direction: row;
         justify-content: space-around;
         padding-left: 1.25rem;
         margin: 0;
