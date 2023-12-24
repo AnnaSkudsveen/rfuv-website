@@ -1,0 +1,21 @@
+.image {
+    width: 80vw;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact {
+    border-top: 1px solid var(--blackish);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blackish);
+}
