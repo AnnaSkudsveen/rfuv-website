@@ -8,8 +8,105 @@ header {
 nav {
     display: flex;
     justify-content: space-between;
-    background-color: var(--primary);
+    background-color: var(--blackish);
     height: 3rem;
     align-items: center;
     position: relative;
+    padding: 0 20px;
+
+}
+
+.nav-menu-logo {
+    height: 2.25rem;
+    /* display: flex;
+    align-items: center; */
+}
+
+.nav-menu-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .nav-menu-logo img {
+    height: 100%;
+    width: 100;
+} */
+
+nav label {
+    padding: 0 1.25rem;
+}
+
+.nav-menu-items li, nav div a {
+    list-style: none;
+    /* padding: 1rem 0 1rem 1.25rem; */
+    margin: 0;
+}
+
+.nav-menu-items li a, nav div a {
+    text-decoration: none;
+}
+
+nav li a:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.25rem;
+}
+
+/* #nav-menu-button {
+    display: none;
+} */
+
+.nav-menu-items, .nav-menu-contact {
+    display: none;
+}
+
+.nav-button:checked ~ .nav-menu-items {
+    display: block;
+    color: var(--primary);
+    /* position: absolute; */
+    width: 100vw;
+    top: 3rem;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+nav a, nav label{
+    color: var(--primary);
+}
+
+/* Small (sm)  portrait tablets and large phones */
+@media (min-width: 640px) {
+    .nav-logo, .nav-menu-items {
+        padding: 0 2.188rem;
+    }
+}
+
+/* Medium (md) landscape tablets*/
+@media (min-width: 768px) {
+    /* Your styles for the medium breakpoint here */
+    nav label {
+        display: none;
+    }
+
+    .nav-menu-items {
+        display: flex;
+        justify-content: space-around;
+        padding-left: 1.25rem;
+        margin: 0;
+    }
+
+    .nav-menu-items li {
+        padding: 0 1.25rem;
+        border: none;
+    }
+}
+
+/* Large (lg) laptops/desktops*/
+@media (min-width: 1024px) {
+    /* Your styles for the large breakpoint here */
+    .nav-logo, .nav-menu-items {
+        padding: 0 4.375rem;
+    }
 }
