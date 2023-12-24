@@ -1,12 +1,18 @@
 :root {
-    --primary: #;
-    --secondary: ;
-    --tertiary: ;
-    --whiteish: ;
-    --blackish: ;
+    --primary: #FFD700;
+    --secondary: #BD632F;
+    --whiteish: #FCFCFC;
+    --blackish: #0D0A0B;
 }
 
 * {
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
 }
+
+body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin: 0;
+}
+
