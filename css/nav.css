@@ -7,6 +7,7 @@ header {
 
 nav {
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-between;
     background-color: var(--blackish);
     height: 3rem;
@@ -52,25 +53,26 @@ nav li a:hover {
     text-underline-offset: 0.25rem;
 }
 
-/* #nav-menu-button {
-    display: none;
-} */
-
-.nav-menu-items, .nav-menu-contact {
+#nav-menu-button {
     display: none;
 }
 
-.nav-button:checked ~ .nav-menu-items {
-    display: block;
+#nav-menu-button:checked ~ .nav-menu-items, .nav-menu-contact {
+    display: flex;
+    justify-content: space-around;
     color: var(--primary);
-    /* position: absolute; */
-    width: 100vw;
+    background-color: var(--blackish);
+    position: absolute;
+    width: 100%;
+    height: fit-content;
     top: 3rem;
     margin: 0;
     padding: 0;
 }
 
-
+.nav-menu-items, .nav-menu-contact {
+    display: none;
+}
 
 nav a, nav label{
     color: var(--primary);
